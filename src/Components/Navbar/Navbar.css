@@ -1,0 +1,126 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 40px;
+
+}
+
+ .navbar-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 19px;
+    
+} 
+
+
+.navbar-me{
+    padding: 12px;
+    border-radius: 50px;
+    background: linear-gradient(280deg, #b212f1 0.38%, #e727e7 100%);
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #414141;
+}
+
+.navbar-me:hover{
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+
+.navbar-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navbar-menu img{
+    margin: auto;
+}
+
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+
+.icon{
+    width: 24px;
+}
+
+.navbar-close{
+    display: none;
+}
+
+.navbar-open{
+    display: none;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        margin: 20px 25px;
+    }
+
+    .navbar-me{
+        display: none;
+    }
+
+
+    .navbar-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    .navbar-close{
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: 325px;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .navbar-menu{
+        position: fixed;
+        width: 350px;
+        height: 100%;
+        border: 4px solid black;
+        top: 0;
+        right: -350px;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        z-index: 2;
+        background-color: #22211f;
+        transition: right 0.6s;
+    }
+
+    .navbar-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .navbar-menu li{
+        font-size: 30px;
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        top: 40px;
+    }
+    
+    .navbar-menu li:hover{
+        color: #b212f1;
+        background-color: #b212f163;
+        border-radius: 10px;
+        border: 2px solid black;
+        position: relative;
+        left: 70px;
+        padding: 10px 50px;
+    }
+}

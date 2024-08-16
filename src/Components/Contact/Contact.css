@@ -1,0 +1,240 @@
+.contact-details img{
+    width: 30px;
+    height: 30px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin: 80px 70px;
+}
+
+.contact-menu{
+    position: relative;
+}
+
+.contact-menu h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.contact-menu img{
+    position: absolute;
+    top: 23px;
+    right: 8px;
+    z-index: -1;
+    transform: rotate(-7deg);
+}
+
+.contact-sections{
+    gap: 150px;
+}
+
+.contact-me{
+    gap: 30px;
+    position: relative;
+    top: 530px;
+    left: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-me h1{
+    font-size: 80px;
+    font-weight: 600px;
+    background: linear-gradient(270deg, #b212f1 9%, #e727e7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-details{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+    position: relative;
+    gap: 25px;
+    top: 20px;
+    left: 10px;
+}
+
+.contact-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+
+}
+
+.contact-detail h1{
+    background: linear-gradient(270deg, #b212f1 9%, #e727e7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.contact-detail:hover{
+        transform: scale(1.2);
+        transition: 0.4s;
+    
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    position: relative;
+    bottom: 230px;
+    left: 30px;
+}
+
+.contact-form label{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.contact-form h1{
+    background: linear-gradient(270deg, #b212f1 9%, #e727e7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    position: relative;
+    left: 180px;
+    top: -10px;
+}
+
+.contact-form input{
+    font-size: 18px;
+    font-family: Outfit;
+    width: 750px;
+    height: 40px;
+    padding-left: 18px;
+    border-radius: 6px;
+    border: none;
+    background:  #32323c;
+    color: #A0A0A0;
+}
+
+.contact-form textarea{
+    font-size: 18px;
+    font-family: Outfit;
+    width: 730px;
+    height: 100px;
+    border-radius: 6px;
+    border: none;
+    padding: 20px;
+    background: #32323c;
+    color: #A0A0A0;
+}
+
+.contact-button{
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(270deg, #b212f1 9%, #e727e7 100%);
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: 660px;
+    position: relative;
+    top: 15px;
+    border: 2px solid #414141;
+}
+
+.contact-button:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+
+@media(max-width:768px) {
+    .contact{
+        align-items: center;
+        margin: 130px 0px;
+        gap: 80px;
+    }
+
+    .contact-menu h1{
+        font-size: 50px;
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .contact-menu img{
+        width: 130px;
+        margin-right: -20px;
+        transform: rotate(-7deg);
+        top: 17px;
+    }
+
+    .contact-me h1{
+        font-size: 60px;
+        top: -20px;
+        position: relative;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .contact-sections{
+        gap: 30px;
+        position: relative;
+        right: 32px;
+    }
+
+    .contact-details{
+        position: relative;
+        top: -10px;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .contact-detail img{
+        width: 25px;
+    }
+
+    .contact-form h1{
+        display: none;
+    }
+
+    .contact-form label{
+        font-size: 18px;
+    }
+
+    .contact-form input{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .contact-form textarea{
+        width: 95%;
+        font-size: 18px;
+    }
+
+    .contact-button{
+        position: relative;
+        left: 190px;
+        top: 0px;
+    }
+}

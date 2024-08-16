@@ -1,0 +1,127 @@
+.pierre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.pierre img{
+    margin-top: 75px;
+}
+
+.pierre h1{
+    text-align: center;
+    width: 70%;
+    font-size: 315%;
+    font-weight: 600;
+}
+
+.pierre h1 span{
+    background: linear-gradient(270deg, #b212f1 9%, #e727e7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pierre p span{
+    background: linear-gradient(270deg, #b616f5 9%, #f72af7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.graduate{
+    text-align: center;
+    width: 29%;
+    font-size: 22px;
+    line-height: 40px;
+    position: relative;
+    margin-top: -20px;
+}
+
+.course{
+    position: relative;
+    top: -35px;
+    width: 50%;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center  ;
+}
+
+.pierre-action{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    font-size: 16px;
+    font-weight: 480;
+    position: relative;
+    margin-top: -55px;
+}
+
+.pierre-connect{
+    padding: 12px 22px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #b212f1 -5.1%, #e727e7 106.3% );
+    cursor: pointer;
+    border: 2px solid #414141;
+}
+
+.pierre-connect:hover{
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+
+.pierre-resume{
+    padding: 12px 22px;
+    border-radius: 50px;
+    border: 2px solid #414141;
+    cursor: pointer;
+}
+
+.pierre-resume a{
+    text-decoration: none;
+    color: white;
+}
+
+.pierre-resume:hover{
+    transform: scale(1.1);
+    border: 2px solid #ffff;
+    
+}
+
+@media(max-width:768px){
+    .pierre img{
+        margin-bottom: -50px;
+        width: 260px;
+    }
+
+    .pierre h1{
+        margin-top: 50px;
+        width: 90%;
+        font-size: 50px;
+    }
+
+    .pierre p{
+        width: 80%;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 5px 0px;
+    }
+
+    .pierre-action{
+        gap: 14px;
+        font-size: 15px;
+        font-weight: 400px;
+        margin-bottom: 45px;
+    }
+
+    .pierre-connect{
+        padding: 10px 20px;
+        border-radius: 40px;
+    }
+
+    .pierre-resume{
+        padding: 10px 20px;
+        border-radius: 40px;
+    }
+}
+

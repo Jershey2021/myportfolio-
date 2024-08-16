@@ -1,0 +1,32 @@
+.footer{
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 2px;
+    bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-credits img {
+    width: 120px;
+    position: relative;
+    top: 9px;
+    left: 7px;
+}
+
+hr{
+    position: relative;
+    bottom: 10px;
+    color:blueviolet;
+    height: 2px;
+    background-color: blueviolet;
+    border: 2px solid blueviolet;
+}
+
+@media(max-width:768px) {
+
+    .footer-credits{
+        font-size: 15px;
+    }
+    
+}
